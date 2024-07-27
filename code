@@ -21,7 +21,7 @@ class Name extends Wish{
         System.out.print("Enter Your name : ");
         String c =a.nextLine();
         String s = c.toUpperCase();
-        System.out.println(c+" Welcome to the website");
+        System.out.println(s+" Welcome to the website");
     }
 }
 
