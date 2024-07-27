@@ -1,0 +1,34 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Wish{
+    public void wish(){
+        Scanner a = new Scanner(System.in);
+        System.out.print("Enter the time in 24hr : ");
+        int b =a.nextInt();
+        if (b<12){
+            System.out.println("Good Morning sir !");
+        }else{
+            System.out.println("Good Afternoon sir !");
+        }
+    }
+}
+
+class Name extends Wish{
+    public void name(){
+        Scanner a = new Scanner(System.in);
+        System.out.print("Enter Your name : ");
+        String c =a.nextLine();
+        String s = c.toUpperCase();
+        System.out.println(c+" Welcome to the website");
+    }
+}
+
+public class T{
+    public static void main(String args[]){
+        Name o = new Name();
+        o.wish();
+        o.name();
+    }
+}
